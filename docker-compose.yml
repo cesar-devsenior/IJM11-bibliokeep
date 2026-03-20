@@ -25,11 +25,12 @@ services:
       - DB_HOST=db
       - DB_NAME=bibliokeep_db
       - DB_USER=admin
+      - DB_PASSWORD=${DB_PASSWORD}
       - APP_JWT_SECRET=${JWT_SECRET}
       - APP_UPLOAD_DIRECTORY=/files
       - APP_ALLOWED_ORIGINS=http://localhost
     ports:
-      - "8091:8080"
+      - "8080:8080"
     volumes:
       - C:/Users/Docente/Desktop/Java/ImpulsaJava/Modulo9/BiblioKeep/bibliokeep/archivos:/files
 
