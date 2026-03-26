@@ -18,7 +18,7 @@ services:
       start_period: 30s
   
   backend:
-    image: bibliokeep-backend
+    image: cesardevsenior/bibliokeep-backend:latest
     container_name: backend
     depends_on:
       db:
@@ -37,7 +37,7 @@ services:
       - C:/Users/Docente/Desktop/Java/ImpulsaJava/Modulo9/BiblioKeep/bibliokeep/archivos:/files
 
   frontend:
-    image: bibliokeep-frontend
+    image: cesardevsenior/bibliokeep-frontend:latest
     container_name: frontend
     depends_on:
       - backend
